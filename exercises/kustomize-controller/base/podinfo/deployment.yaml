@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: podinfo
+      app: podinfo
   template:
     metadata:
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9797"
       labels:
-        name: podinfo
+        app: podinfo
     spec:
       containers:
       - name: podinfod
