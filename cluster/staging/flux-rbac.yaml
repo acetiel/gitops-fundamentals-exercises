@@ -3,7 +3,7 @@ kind: RoleBinding
 metadata:
   creationTimestamp: null
   name: flux-reconciler-admin-binding
-  namespace: default
+  namespace: flux-system
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
@@ -11,4 +11,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: flux-reconciler
-  namespace: default
+  namespace: flux-systsem
